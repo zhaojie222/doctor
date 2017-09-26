@@ -1,0 +1,263 @@
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.12rem;
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+header {
+  width: 100%;
+  height: 0.35rem;
+  text-align: center;
+  line-height: 0.35rem;
+  font-size: 0.15rem;
+  position: relative; }
+  header .left_i {
+    position: absolute;
+    left: 0.1rem; }
+    header .left_i > i {
+      font-size: 0.2rem; }
+
+.section {
+  -webkit-flex: 1;
+  overflow-y: scroll; }
+  .section .banner {
+    height: 1.7rem;
+    background: #ffffff;
+    position: relative; }
+    .section .banner .box {
+      height: 1.2rem;
+      background: #3E7CED; }
+    .section .banner .body1 {
+      width: 88%;
+      height: 1.37rem;
+      background: #ffffff;
+      box-shadow: 2px 2px 30px #ccc;
+      position: absolute;
+      left: 6%;
+      top: 0.1rem;
+      border-radius: 10px; }
+      .section .banner .body1 .content {
+        width: 1.4rem;
+        padding: 0.08rem 0;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center; }
+        .section .banner .body1 .content img {
+          width: 0.42rem;
+          height: 0.52rem;
+          margin: 0 auto; }
+        .section .banner .body1 .content span {
+          margin: 0.1rem auto;
+          font-size: 0.1rem;
+          color: #989898; }
+        .section .banner .body1 .content button {
+          width: 1.07rem;
+          height: 0.3rem;
+          border: 1px solid #DBDBDB;
+          border-radius: 20px;
+          color: #BFC8D1;
+          background: #ffffff;
+          font-size: 0.11rem;
+          margin: 0 auto; }
+  .section .kongxi {
+    height: 0.1rem;
+    background: #F8F8F8; }
+  .section .jiangtang {
+    height: 1.56rem; }
+    .section .jiangtang p {
+      height: 0.3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 0.1rem; }
+      .section .jiangtang p span:nth-child(1) {
+        display: block;
+        font-size: 0.11rem;
+        color: #7C7C7C;
+        font-weight: bolder; }
+      .section .jiangtang p span:nth-child(2) {
+        display: block;
+        font-size: 0.1rem;
+        color: #BFBFBF; }
+        .section .jiangtang p span:nth-child(2) i {
+          font-size: 0.16rem;
+          font-weight: bold;
+          color: #E6E6E6;
+          padding-left: 0.1rem; }
+    .section .jiangtang .box1 {
+      display: flex; }
+      .section .jiangtang .box1 dl:nth-child(1) {
+        padding-left: 0.1rem; }
+      .section .jiangtang .box1 dl:nth-child(2) {
+        padding: 0 0.1rem; }
+      .section .jiangtang .box1 dl {
+        flex: 1;
+        display: flex;
+        flex-direction: column; }
+        .section .jiangtang .box1 dl dt {
+          display: flex;
+          justify-content: center; }
+          .section .jiangtang .box1 dl dt img {
+            width: 100%;
+            height: 100%;
+            max-height: 1.35rem; }
+  .section .jiankang {
+    height: 1.4rem; }
+    .section .jiankang p {
+      height: 0.4rem;
+      line-height: 0.4rem;
+      border-bottom: 2px solid #EFEFEF;
+      position: relative;
+      display: flex;
+      padding-left: 0.08rem; }
+      .section .jiankang p span {
+        display: block;
+        font-size: 0.11rem;
+        font-weight: bold;
+        color: #7E7E7E; }
+      .section .jiankang p button {
+        border: 1px dashed #666;
+        position: absolute;
+        font-size: 0.07rem;
+        color: #969896;
+        padding: 0.04rem 0.1rem;
+        background: none;
+        border-radius: 20px;
+        right: 0.15rem;
+        top: 0.07rem; }
+      .section .jiankang p b {
+        width: 0.06rem;
+        height: 0.06rem;
+        background: #E51024;
+        border-radius: 50%;
+        position: absolute;
+        right: 0.15rem;
+        top: 0.07rem; }
+    .section .jiankang dl {
+      margin: 0.1rem;
+      display: flex; }
+      .section .jiankang dl dt {
+        width: 1rem;
+        height: 0.8rem;
+        margin-right: 0.1rem; }
+        .section .jiankang dl dt img {
+          width: 100%;
+          height: 100%; }
+      .section .jiankang dl dd {
+        display: flex;
+        flex-direction: column; }
+        .section .jiankang dl dd span:nth-child(1) {
+          font-size: 0.13rem;
+          font-weight: bold; }
+        .section .jiankang dl dd span:nth-child(2) {
+          font-size: 0.07rem;
+          margin: 0.05rem 0; }
+        .section .jiankang dl dd button {
+          width: 0.5rem;
+          height: 0.2rem;
+          border: 1px solid #C2AF9E;
+          color: #C39D86;
+          font-size: 0.1rem;
+          display: inline;
+          background: none;
+          border-radius: 10px;
+          margin-top: 0.1rem; }
+  .section .ceping {
+    height: 1.22rem; }
+    .section .ceping p {
+      height: 0.3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 0.1rem; }
+      .section .ceping p span:nth-child(1) {
+        display: block;
+        font-size: 0.11rem;
+        color: #7C7C7C;
+        font-weight: bolder; }
+      .section .ceping p span:nth-child(2) {
+        display: block;
+        font-size: 0.1rem;
+        color: #BFBFBF; }
+        .section .ceping p span:nth-child(2) i {
+          font-size: 0.16rem;
+          font-weight: bold;
+          color: #E6E6E6;
+          padding-left: 0.1rem; }
+  .section .imgbox {
+    width: 100%;
+    height: 1rem; }
+    .section .imgbox .swiper-container {
+      width: 100%; }
+      .section .imgbox .swiper-container .swiper-wrapper {
+        width: 100%; }
+        .section .imgbox .swiper-container .swiper-wrapper .swiper-slide {
+          width: 33%;
+          height: 1.55rem;
+          margin-left: 0.1rem; }
+          .section .imgbox .swiper-container .swiper-wrapper .swiper-slide img {
+            width: 100%;
+            height: 0.81rem; }
+  .section .baozhang p {
+    height: 0.3rem;
+    line-height: 0.3rem;
+    font-size: 0.11rem;
+    font-weight: bold;
+    color: #8F8F8F;
+    margin-left: 0.1rem; }
+  .section .baozhang dl {
+    margin: 0.1rem;
+    display: flex; }
+    .section .baozhang dl dt {
+      width: 1rem;
+      height: 0.8rem;
+      margin-right: 0.1rem; }
+      .section .baozhang dl dt img {
+        width: 100%;
+        height: 100%; }
+    .section .baozhang dl dd p:nth-child(1) {
+      font-size: 0.1rem;
+      font-weight: bold;
+      color: #4A4A4A; }
+    .section .baozhang dl dd em {
+      font-size: 0.05rem;
+      color: #B6B6B6;
+      word-break: break-all;
+      display: -webkit-box; }
+    .section .baozhang dl dd .jiage b {
+      color: #D7ADA1;
+      font-size: 0.1rem; }
+    .section .baozhang dl dd .jiage a {
+      font-size: 0.08rem;
+      color: #DCDCDC;
+      text-decoration: line-through;
+      margin-left: 0.1rem; }
+
+.footer {
+  height: 0.4rem;
+  border-top: 2px solid #E5E5E5;
+  background: #F8F8F8; }
+  .footer .nav {
+    display: -webkit-flex;
+    text-align: center; }
+    .footer .nav li {
+      -webkit-flex: 1; }
+      .footer .nav li i {
+        color: #777777;
+        font-size: 0.14rem;
+        padding-top: 0.06rem; }
+      .footer .nav li span {
+        display: block;
+        color: #A4A4A4; }
+
+.footer .nav li:nth-child(4) i {
+  color: skyblue; }
+
+.footer .nav li:nth-child(4) span {
+  color: skyblue; }
+
+/*# sourceMappingURL=style1.css.map */

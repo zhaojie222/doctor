@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telphone=no, email=no">
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css">
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/common.css">
+    <link type="text/css" rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+<header class="header">
+    <div class="left_i">
+        <i class="fa fa-angle-left"></i>
+    </div>
+    <b>寻医</b>
+</header>
+<section class="section">
+    <div class="box1">
+        <div class="sousuo">
+            <span>
+                <i class="fa fa-search"></i>
+            </span>
+            <input type="text" placeholder="搜索医院，医生，科室，疾病">
+        </div>
+    </div>
+    <div class="box2">
+        <p>
+            <span>
+                <i class="fa fa-heartbeat "></i>
+                <b>健康自诊</b>
+            </span>
+            <span>
+                <a>根据症状找医生</a>
+                <i class="fa fa-chevron-right "></i>
+            </span>
+        </p>
+    </div>
+    <div class="box3">
+        <ul class="nav">
+            <li>
+                <a>
+                    <i class="fa fa-id-card"></i>
+                </a>
+                <span>挂号</span>
+            </li>
+            <li>
+                <a>
+                    <i class="fa fa-volume-control-phone"></i>
+                </a>
+                <span>寻医</span>
+            </li>
+            <li>
+                <a>
+                    <i class="fa fa-hand-peace-o"></i>
+                </a>
+                <span>健康</span>
+            </li>
+            <li>
+                <a>
+                    <i class="fa fa-user"></i>
+                </a>
+                <span>个人中心</span>
+            </li>
+        </ul>
+        <ul class="nav">
+            <li>
+                <a>
+                    <i class="fa fa-id-card"></i>
+                </a>
+                <span>挂号</span>
+            </li>
+            <li>
+                <a>
+                    <i class="fa fa-volume-control-phone"></i>
+                </a>
+                <span>寻医</span>
+            </li>
+            <li>
+                <a>
+                    <i class="fa fa-hand-peace-o"></i>
+                </a>
+                <span>健康</span>
+            </li>
+            <li>
+                <a>
+                    <i class="fa fa-user"></i>
+                </a>
+                <span>个人中心</span>
+            </li>
+        </ul>
+    </div>
+    <div class="box4">
+        <ul class="ul1">
+            <li>常见</li>
+            <li>女性</li>
+            <li>男性</li>
+            <li>儿童</li>
+            <li>老人</li>
+            <li>
+                <i class="fa fa-angle-right"></i>
+            </li>
+        </ul>
+        <ol class="ol1">
+            <li>
+                <a>颈椎病</a>
+            </li>
+            <li>
+                <a>月经不调</a>
+            </li>
+            <li>
+                <a>湿疹</a>
+            </li>
+            <li>
+                <a>月经不调</a>
+            </li>
+        </ol>
+
+    </div>
+    <div class="box5">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/login_1.jpg" alt=""/>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/login_2.jpg" alt=""/>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/login_1.jpg" alt=""/>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/login_2.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="box6">
+        <p>医生说</p>
+        <dl>
+            <dt>
+                <img src="img/people_1.jpg" alt="">
+            </dt>
+            <dd>
+                <h3>医生说|治疗慢性胃炎，膏方调养有特色</h3>
+                <p><b>程艳</b><span>上海中医药大学附属岳阳中学</span></p>
+            </dd>
+        </dl>
+        <p>渲染区....</p>
+    </div>
+</section>
+<footer class="footer">
+    <ul class="nav">
+        <li>
+            <a>
+                <i class="fa fa-id-card"></i>
+            </a>
+            <span>挂号</span>
+        </li>
+        <li>
+            <a>
+                <i class="fa fa-volume-control-phone"></i>
+            </a>
+            <span>寻医</span>
+        </li>
+        <li>
+            <a>
+                <i class="fa fa-hand-peace-o"></i>
+            </a>
+            <span>健康</span>
+        </li>
+        <li>
+            <a>
+                <i class="fa fa-user"></i>
+            </a>
+            <span>个人中心</span>
+        </li>
+    </ul>
+</footer>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript">
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination'
+    });
+
+    $.ajax({
+        url:"data/data1.json",
+        success:function(data){
+            var str="";
+            for(var i in data){
+                str+="<dl><dt>"+data[i].img+"</dt><dd><h3>"+data[i].title+"</h3><p><b>"+data[i].name+"</b><span>"+data[i].suoshu+"</span></p></dd></dl>"
+            }
+            $(".box6").append(str);
+        }
+    })
+</script>
+</body>
+</html>
